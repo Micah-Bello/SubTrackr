@@ -1,0 +1,19 @@
+@SubTrackr.API_HostAddress = http://localhost:5114
+
+### Register a New User
+POST https://localhost:7082/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "Test123!"
+}
+
+### Login
+POST https://localhost:7082/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "Test123!"
+}

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubTrackr.API", "SubTrackr.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubTrackr.Infrastructure", "SubTrackr.Infrastructure\SubTrackr.Infrastructure.csproj", "{AD681A90-DC4A-41FE-9F26-4EB5FA7C0195}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubTrackr.Domain", "SubTrackr.Domain\SubTrackr.Domain.csproj", "{64A858E4-E8BC-449B-BA83-B5F67A3FF7B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubTrackr.Application", "SubTrackr.Application\SubTrackr.Application.csproj", "{C3E1C086-7038-4196-B4C5-34B190A13C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{AD681A90-DC4A-41FE-9F26-4EB5FA7C0195}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD681A90-DC4A-41FE-9F26-4EB5FA7C0195}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD681A90-DC4A-41FE-9F26-4EB5FA7C0195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A858E4-E8BC-449B-BA83-B5F67A3FF7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A858E4-E8BC-449B-BA83-B5F67A3FF7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A858E4-E8BC-449B-BA83-B5F67A3FF7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A858E4-E8BC-449B-BA83-B5F67A3FF7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E1C086-7038-4196-B4C5-34B190A13C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E1C086-7038-4196-B4C5-34B190A13C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E1C086-7038-4196-B4C5-34B190A13C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E1C086-7038-4196-B4C5-34B190A13C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SubTrackr.Domain.Entities;
 
 namespace SubTrackr.Infrastructure.Data;
 
@@ -9,4 +10,6 @@ public class AppDbContext : IdentityDbContext
         : base (options)
     {
     }
+
+    public DbSet<Subscription> Subscriptions => Set<Subscription>();
 }

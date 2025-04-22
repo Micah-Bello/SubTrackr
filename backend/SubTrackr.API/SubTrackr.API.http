@@ -17,3 +17,30 @@ Content-Type: application/json
   "email": "test@example.com",
   "password": "Test123!"
 }
+
+### Public route (no token)
+GET https://localhost:7082/api/test/public
+
+### Secure route (missing token)
+GET https://localhost:7082/api/test/secure
+
+### Secure route (with token)
+GET https://localhost:7082/api/test/secure
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YzhmNjAyNS00MTFhLTQzNmItOTA1Yy0zZTZkMTdjOTNmOTUiLCJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJleHAiOjE3NDUzNDMwNjQsImlzcyI6InN1YnRyYWNrciJ9.gRKdjpjrT8Kuw8NNZOlH1cJvz034NqBuRrJyFHpiZX8
+
+
+### Get all subscriptions (with token)
+GET https://localhost:7082/api/subscriptions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YzhmNjAyNS00MTFhLTQzNmItOTA1Yy0zZTZkMTdjOTNmOTUiLCJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJleHAiOjE3NDUzNDMwNjQsImlzcyI6InN1YnRyYWNrciJ9.gRKdjpjrT8Kuw8NNZOlH1cJvz034NqBuRrJyFHpiZX8
+
+### Add subscription
+POST https://localhost:7082/api/subscriptions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YzhmNjAyNS00MTFhLTQzNmItOTA1Yy0zZTZkMTdjOTNmOTUiLCJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJleHAiOjE3NDUzNDQ5MzEsImlzcyI6InN1YnRyYWNrciJ9.8QSqkGkLhwRtLBJWRIDyIgvw8SZLEE-zoc8Tzf9moyg
+Content-Type: application/json
+
+{
+  "name": "Spotify",
+  "price": 5.99,
+  "billingCycle": "Monthly",
+  "nextBillingDate": "2025-05-15"
+}
